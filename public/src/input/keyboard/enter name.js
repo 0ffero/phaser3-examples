@@ -101,7 +101,7 @@ function create ()
 
                 playerText.text = name;
             }
-            else if (name.length < 3)
+            else if (name.length < 3 && char!=='<')
             {
                 //  Add
                 name = name.concat(chars[cursor.y][cursor.x]);
@@ -149,7 +149,7 @@ function create ()
         {
             //  Submit
         }
-        else if (name.length < 3)
+        else if (name.length < 3 && char!=='<')
         {
             //  Add
             name = name.concat(char);
